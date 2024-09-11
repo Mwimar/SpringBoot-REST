@@ -17,6 +17,9 @@ public class JobRepo {
                 new JobPost(4,"Frontend", "Must Know Frontend",3, Arrays.asList("css", "javascript"))
         ));
 
+    public static JobPost getJob() {
+    }
+
     public List<JobPost> getallJobs(){
         return jobs;
     }

@@ -21,4 +21,10 @@ public class JobRestController {
     public List<JobPost> getAllJobs(){
         return service.getAllJobs();
     }
+
+    @GetMapping("/jobPost/3")
+    public JobPost jobPost(){
+        return service.getJob(3);
+
+    }
 }
