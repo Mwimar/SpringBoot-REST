@@ -13,18 +13,18 @@ import java.util.List;
 public class JobService {
 
     @Autowired
-    private JobRepo service;
+    private JobRepo repo;
 
     public void addJob(JobPost jobPost){
-        service.addJob(jobPost);
+        repo.addJob(jobPost);
 
     };
 
     public List<JobPost> getAllJobs(){
-        return service.getallJobs();
+        return repo.getallJobs();
     };
 
-    public JobPost getJob(int i) {
-        return JobRepo.getJob();
+    public JobPost getJob(int postId) {
+        return repo.getJob(postId);
     }
 }

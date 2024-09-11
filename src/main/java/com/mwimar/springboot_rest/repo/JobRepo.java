@@ -17,7 +17,14 @@ public class JobRepo {
                 new JobPost(4,"Frontend", "Must Know Frontend",3, Arrays.asList("css", "javascript"))
         ));
 
-    public static JobPost getJob() {
+    public JobPost getJob(int postId) {
+
+        for(JobPost job : jobs){
+            if(job.getPostId()== postId){
+                return job;
+            }
+            return null;
+        }
     }
 
     public List<JobPost> getallJobs(){
