@@ -21,10 +21,11 @@ public class JobRepo {
 
         for(JobPost job : jobs){
             if(job.getPostId()== postId){
+
                 return job;
             }
-            return null;
         }
+            return null;
     }
 
     public List<JobPost> getallJobs(){
