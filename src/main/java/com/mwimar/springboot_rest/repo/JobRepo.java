@@ -1,6 +1,7 @@
 package com.mwimar.springboot_rest.repo;
 
-import com.mwimar.JobApp.model.JobPost;
+
+import com.mwimar.springboot_rest.model.JobPost;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

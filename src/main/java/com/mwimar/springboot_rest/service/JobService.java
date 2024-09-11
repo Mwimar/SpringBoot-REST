@@ -1,7 +1,9 @@
 package com.mwimar.springboot_rest.service;
 
-import com.mwimar.JobApp.model.JobPost;
-import com.mwimar.JobApp.repo.JobRepo;
+
+
+import com.mwimar.springboot_rest.model.JobPost;
+import com.mwimar.springboot_rest.repo.JobRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
