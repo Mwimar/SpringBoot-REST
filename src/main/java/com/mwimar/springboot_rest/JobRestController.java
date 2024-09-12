@@ -37,7 +37,8 @@ public class JobRestController {
     }
 
 
-    public String deleteJob(){}
+    @DeleteMapping("/jobPost/{postId}")
+    public String deleteJob(@PathVariable int postId){}
 
 
 }
