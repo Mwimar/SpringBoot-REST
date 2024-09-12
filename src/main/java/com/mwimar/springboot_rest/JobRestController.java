@@ -19,14 +19,15 @@ public class JobRestController {
         return service.getAllJobs();
     }
 
-    @GetMapping("/jobPost/{postId}")
+    @GetMapping("jobPost/{postId}")
     public JobPost jobPost(@PathVariable int postId){
         return service.getJob(postId);
     }
 
-    @PostMapping("/addJob")
-    public void addJob(@RequestBody JobPost jobPost){
+    @PostMapping("jobPost")
+    public JobPost addJob(@RequestBody JobPost jobPost){
         service.addJob(jobPost);
+        return jobPost;
     }
 
 
