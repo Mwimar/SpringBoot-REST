@@ -37,6 +37,11 @@ public class JobRepo {
         System.out.println(jobs);
     }
 
-    public void updateJob() {
+    public void updateJob(JobPost jobPost) {
+        for(JobPost jobPost1:jobs){
+            if(jobPost1.getPostId()==jobPost.getPostId()){
+
+            }
+        }
     }
 }
