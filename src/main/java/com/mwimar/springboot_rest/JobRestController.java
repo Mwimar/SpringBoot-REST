@@ -22,6 +22,10 @@ public class JobRestController {
     @GetMapping("/jobPost/{postId}")
     public JobPost jobPost(@PathVariable int postId){
         return service.getJob(postId);
-
     }
+
+    @PostMapping("/addJob")
+    public void addJob(){}
+
+
 }
