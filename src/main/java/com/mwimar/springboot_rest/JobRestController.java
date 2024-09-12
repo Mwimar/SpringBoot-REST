@@ -32,6 +32,7 @@ public class JobRestController {
 
     @PutMapping("jobPost")
     public JobPost updateJob(@RequestBody JobPost jobPost){
+        service.updateJob();
         return service.getJob(jobPost.getPostId());
     }
 
